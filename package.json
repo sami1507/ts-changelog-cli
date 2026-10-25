@@ -1,0 +1,47 @@
+{
+  "name": "ts-changelog-cli",
+  "version": "0.1.0",
+  "description": "Generate Markdown changelogs and suggest semver bumps from Conventional Commits.",
+  "keywords": [
+    "changelog",
+    "conventional-commits",
+    "semver",
+    "release",
+    "git",
+    "cli",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "sami1507",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sami1507/ts-changelog-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sami1507/ts-changelog-cli/issues"
+  },
+  "homepage": "https://github.com/sami1507/ts-changelog-cli#readme",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "changelog-gen": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
